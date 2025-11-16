@@ -12,4 +12,4 @@
 
 sed -i 's/192.168.1.1/192.168.188.1/g' package/base-files/luci2/bin/config_generate
 #sed -i 's/LEDE/OpenWrt(2025.3.21)/g' package/base-files/luci2/bin/config_generate
-sed -i 's/LEDE/OpenWrt-'"$(date -d "now" +%Y-%m-%d)"'/g' package/base-files/luci2/bin/config_generate
+sed -i 's/LEDE/EdgeRouter-'"$(date -d "now" +%Y-%m-%d)"'/g' package/base-files/luci2/bin/config_generate
