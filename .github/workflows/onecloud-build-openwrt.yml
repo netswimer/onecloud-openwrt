@@ -94,12 +94,17 @@ jobs:
         echo "=============================================================================="
 
     - name: Checkout
-      uses: actions/checkout@main
+      uses: actions/checkout@v6
     - name: Set up Go
       uses: actions/setup-go@v6
       with:
           go-version: '>=1.25.7'
+          cache: true
           
+    - name: Allow Go auto toolchain
+      run: 
+         go env -w GOTOOLCHAIN=auto
+         
     - name: Initialization environment
       env:
         DEBIAN_FRONTEND: noninteractive
