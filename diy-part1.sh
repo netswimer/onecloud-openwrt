@@ -19,7 +19,7 @@
 # echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 echo 'src-git kenzok8 https://github.com/kenzok8/small-package' >>feeds.conf.default
 echo 'src-git kenzok8d https://github.com/kenzok8/small' >>feeds.conf.default
-sed -i '1i src-git passwall2 https://github.com/Openwrt-Passwall/openwrt-passwall2.git;main' >>feeds.conf.default
-sed -i '2i src-git passwall2d https://github.com/Openwrt-Passwall/openwrt-passwall-packages.git;main' >>feeds.conf.default
+sed -i '1i src-git passwall2 https://github.com/Openwrt-Passwall/openwrt-passwall2.git;main' feeds.conf.default
+sed -i '2i src-git passwall2d https://github.com/Openwrt-Passwall/openwrt-passwall-packages.git;main' feeds.conf.default
 # git clone https://github.com/sbwml/luci-app-alist package/alist
 # git clone https://github.com/rufengsuixing/luci-app-onliner package/onliner
